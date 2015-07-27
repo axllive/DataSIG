@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/datasig/public/css/estilo_login.css">
+    <title>DataSIG</title>
+  </head>
+  <body>
+      <div id="d_login_falha">
+        <form class="login" id="form_login" method="post" action="<?=$this->url(array('controller'=>'autenticacao','action'=>'login'))?>">
+                <ol>
+                    <!--<li>
+                        <label for="nome">nome<em></em></label>
+                        <input id="nome" type="name" value=""/>
+                    </li>-->
+                    <p class="center">Falha na Autenticação. <br />Por favor, tente novamente:</p>
+                    <li>
+                        <div id="label"><label for="login">login&nbsp;&nbsp;</label></div>
+                        <div id="content"><input id="login" type="text" name="login"/></div>
+                    </li>
+                    <li>
+                        <div><label for="senha">senha</label></div>
+                        <div><input id="senha" type="password" name="senha" /></div>
+                    </li>
+
+                    <li>
+                        <input type="submit" class="botao" id="entrar" value="entrar" />
+                         <a class="botao" href="<?=$this->url(array('controller'=>'cadastro','action'=>'index'))?>">cadastrar</a>
+                    </li>
+                </ol>
+            </form>
+          </div>
+
+  </body>
+</html>

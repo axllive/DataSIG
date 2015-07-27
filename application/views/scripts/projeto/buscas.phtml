@@ -1,0 +1,19 @@
+<div id="projeto">
+    
+<table id="table" border="1">
+    <tr>
+        <th>Projeto</th>
+        <th>Descrição</th> 
+
+        <th></th> <!--colspan-->
+    </tr>
+    <?php foreach($this->busca_projetos as $projeto): ?>
+            <tr>
+                <td><?= $projeto['nome_projeto']?></td>
+                <td><?= $projeto['descricao_projeto']?></td>
+                <td><a href="<?= $this->url(array("controller" => "projeto", "action" => "participar", "id" => $projeto['id_projeto'] ), null, true) ?>">Participar</a></td>
+                
+             </tr>   
+    <?php endforeach;?>
+</table>
+</div>

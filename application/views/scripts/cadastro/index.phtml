@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/estilo_login.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo_login.css">
+    <title>DataSIG Cadastro</title>
+  </head>
+  <body>
+      <div id="d_cadastro">
+        <form method="post" action="<?=$this->url(array('controller'=>'autenticacao','action'=>'create'),null,true)?>" class="login" id="form_login">
+                <ol>
+                    <!--<li>
+                        <label for="nome">nome<em></em></label>
+                        <input id="nome" type="name" value=""/>
+                    </li>-->
+                    <p>Cadastro</p>
+                    <li>
+                        <label for="login">login&nbsp;&nbsp;</label>
+                        <input id="login" type="text" name="login" required="required"/>
+                    </li>
+                    <li>
+                        <label for="senha">senha</label>
+                        <input id="senha" type="password" name="senha" required="required"/>
+                    </li>
+                    <li>
+                        <label for="nome">nome</label>
+                        <input id="nome" type="text" name="nome" required="required"/>
+                    </li>
+                    <li>
+                        <label for="sobrenome">sobrenome</label>
+                        <input id="sobrenome" type="text" name="sobrenome" required="required"/>
+                    </li>
+                    <li>
+                        <label for="dt_nasc">data de nascimento</label>
+                        <input id="dt_nasc" type="date" name="dt_nasc">
+                    </li>
+                    <li>
+                        <label for="instituicao">instituição</label>
+                        <input id="instituicao" type="text" name="instituicao" required="required"/>
+                    </li>
+                    <li>
+                        <label for="email">email</label>
+                        <input id="email" type="email" name="email" required="required"/>
+                    </li>
+                    <li>
+                    <input type="submit" class="botao" id="cadastrar" value="cadastrar" />
+                    <a class="botao" href="<?=$this->url(array('controller'=>'autenticacao','action'=>'index'),null,true)?>">cancelar</a>
+                    </li>
+                </ol>
+            </form>
+          </div>
+  </body>
+</html>

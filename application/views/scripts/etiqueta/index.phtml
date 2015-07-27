@@ -1,0 +1,37 @@
+      <div id="d_login">
+        <form method="post" action="<?=$this->url(array('controller'=>'etiqueta','action'=>'criar'),null,true)?>" class="projeto" id="projeto_cadastro">
+                <p>Criar nova Etiqueta</p>
+                <ol>
+                
+                    <li>
+                         <input id="admin_projeto" type="hidden" name="id_projeto" value="<?=$this->idprojeto?>"/>
+                    </li>
+                    <li>
+                        <label for="nome_projeto">Nome da Etiqueta</label>
+                    </li>
+                    <li>
+                        <input id="nome_projeto" type="text" name="nome_etiqueta" required/>
+                    </li>
+                    <li class="botao">
+                        <input type="submit" class="botao" id="cadastrar" value="criar etiqueta" />
+                    </li>
+                    <li class="botao">
+                        <a href="<?=$this->url(array('controller'=>'projeto','action'=>'visualizar','id' => $this->idprojeto),null,true)?>">voltar</a>
+                    </li>
+                </ol>
+            </form>
+         </div>
+
+<table id="table" border="1">
+    <tr>
+        <th>Etiquetas</th>
+
+    </tr>
+    <?php foreach($this->etiquetas as $etiqueta): ?>
+            <tr>
+                <td><?= $etiqueta['nome_etiqueta']?></td>
+                <!--<td><a href="<?= $this->url(array("controller" => "projeto", "action" => "participar", "id" => $projeto['id_projeto'] ), null, true) ?>">Participar</a></td>-->
+                
+             </tr>   
+    <?php endforeach;?>
+</table>

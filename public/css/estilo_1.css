@@ -1,0 +1,133 @@
+html {
+    height:100%;
+}
+
+body {
+    background-color:#fff;
+    background-image:url(/datasig/public/imagens/data_sig_padrao_b.gif);
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-weight: 100;
+    }
+    
+    #erro {
+        margin:0 auto;
+        padding:4%;
+        text-align: center;
+    }
+    
+    #erro h1, h2, h3 {
+        font-weight:100;
+    }
+        
+#logo {
+    font-family: sans-serif;
+    font-size: 60pt;
+    font-weight: 100;
+    letter-spacing: 10pt;
+    color:#FFF;
+    position:absolute;
+    margin-top:530px;
+    margin-left:190px;
+}
+
+#canvas-wrap { 
+    margin: 0 auto;
+    width: 600px;
+    padding: 0 px;
+    margin:0 px;
+    position: relative;
+    }
+
+#form_cadastro {
+  z-index:99;
+  display:block;
+}
+
+#form_login{
+    z-index:100;
+    display:block;
+}
+
+    form.login fieldset {
+        margin-bottom:10px;
+    }
+
+    form.login label {
+        margin-right:2px;
+        color:#9D1A24;
+        display: inline-block;
+        line-height: 1.8;
+        vertical-align: top;
+    }
+
+    form.login input.botao {
+        font-size:15px;
+        color:#9D1A24;
+        background-color:#DDD;
+        text-decoration:none;
+        border-style:none;
+
+        margin-top:20px;
+        width:90px;
+
+        border-radius:9px;
+    }
+
+    form.login input.botao#entrar, #voltar {
+        float:left;
+    }
+
+    form.login input.botao {
+        float:right;
+    }
+
+    form.login fieldset ol {
+        margin: 0;
+        padding: 0;
+}
+
+    form.login fieldset li {
+        padding:10px;
+        font-family:sans-serif;
+        list-style:none;
+        text-decoration: none;
+}
+
+    form.login fieldset input {
+        height:30px;
+        width:200px;
+
+        border-style:solid;
+        border-bottom-color:#9D1A24;
+        border-left-color:#9D1A24;
+        border-right-color:#9D1A24;
+        border-top-style:none;
+}
+
+#formulario, #formulario_2 {
+    border-style: none;
+    z-index: 10;
+    height:auto;
+    position:relative;
+    float:right;
+    text-align: center;
+}
+
+#formulario_2{
+  margin-top: -54px;
+}
+
+
+#login {
+
+    width:500px;
+    height:500px;
+
+    margin:0auto;
+}
+
+span.red{
+    color:red;
+}

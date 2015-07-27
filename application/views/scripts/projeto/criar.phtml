@@ -1,0 +1,29 @@
+      <div id="d_login">
+        <form method="post" action="<?=$this->url(array('controller'=>'projeto','action'=>'novo'),null,true)?>" class="projeto" id="projeto_cadastro">
+                <p>Criar novo projeto</p>
+                <ol>
+                
+                    <li>
+                         <input id="admin_projeto" type="hidden" name="admin_projeto" value="<?=$this->id?>"/>
+                    </li>
+                    <li>
+                        <label for="nome_projeto">Nome do Projeto</label>
+                    </li>
+                    <li>
+                        <input id="nome_projeto" type="text" name="nome_projeto" required/>
+                    </li>
+                    <li>
+                        <label for="descricao_projeto">Descrição do Projeto</label>
+                    </li>
+                    <li>
+                        <input id="descricao_projeto" type="text" name="descricao_projeto" required/>
+                    </li>
+                    <li class="botao">
+                        <input type="submit" class="botao" id="cadastrar" value="criar projeto" />
+                    </li>
+                    <li class="botao">
+                        <a href="<?=$this->url(array('controller'=>'index','action'=>'index'))?>">cancelar</a>
+                    </li>
+                </ol>
+            </form>
+          </div>

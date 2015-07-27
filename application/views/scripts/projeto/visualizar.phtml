@@ -1,0 +1,21 @@
+<a class="linkmarrom" href="<?= $this->url(array("controller" => "etiqueta", "action" => "index", "id" => $this->idprojeto ), null, true) ?>">Nova Etiqueta</a>
+<div id="projeto">
+    
+<table id="table" border="1">
+    <tr>
+        <th>Etiqueta</th>
+        <th>Valor</th> 
+        <th>Localização</th> <!--colspan-->
+    </tr>
+    <?php foreach($this->etiquetas as $etiqueta): ?>
+            <tr>
+                <td><?= $etiqueta['nome_etiqueta']?></td>
+                <td><?= $etiqueta['valor']?></td>
+                <td><?= $etiqueta['coord']?></td>
+                
+                <!--<td><a href="<?= $this->url(array("controller" => "projeto", "action" => "participar", "id" => $projeto['id_projeto'] ), null, true) ?>">Participar</a></td>-->
+                
+             </tr>   
+    <?php endforeach;?>
+</table>
+</div>

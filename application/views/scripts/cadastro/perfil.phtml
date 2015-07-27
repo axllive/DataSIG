@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/estilo_login.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo_login.css">
+    <title>DataSIG Perfil</title>
+  </head>
+  <body>
+      <div id="d_login">
+        <form method="post" action="<?=$this->url(array('controller'=>'cadastro','action'=>'create'),null,true)?>" class="login" id="form_login">
+            <fieldset id="formulario">
+                <ol>
+                    <!--<li>
+                        <label for="nome">nome<em></em></label>
+                        <input id="nome" type="name" value=""/>
+                    </li>-->
+                    <p>Cadastro</p>
+                    <li>
+                        <input id="nome" type="text" name="foreign" required="required" value="<?=$this->user?>"/>
+                    </li>
+                    <li>
+                        <label for="nome">nome&nbsp;&nbsp;</label>
+                        <input id="nome" type="text" name="nome" required="required"/>
+                    </li>
+                    <li>
+                        <label for="sobrenome">sobrenome&nbsp;&nbsp;</label>
+                        <input id="sobrenome" type="text" name="sobrenome" required="required"/>
+                    </li>
+                    <li>
+                        <label for="dtnascimento">data de nascimento</label>
+                        <input id="dtnascimento" type="datetime" name="dtnascimento">
+                    </li>
+                    <li>
+                        <label for="instituicao">instituicao&nbsp;&nbsp;</label>
+                        <input id="instituicao" type="text" name="instituicao" required="required"/>
+                    </li>
+                    <li>
+                        <label for="email">email</label>
+                        <input id="senha" type="email" name="email" required="required"/>
+                    </li>
+                    <li>
+                        <a href="<?=$this->url(array('controller'=>'autenticacao','action'=>'index'),null,true)?>">Cancelar</a>
+                        <input type="submit" class="botao" id="cadastrar" value="cadastrar" />
+                    </li>
+                </ol>
+                </fieldset>     
+            </form>
+          </div>
+  </body>
+</html>

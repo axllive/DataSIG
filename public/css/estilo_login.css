@@ -1,0 +1,151 @@
+html, body { margin: 0; padding: 0; }
+
+body {
+ background-image:url(../imagens/data_sig_padrao.gif);
+ font-family:sans-serif;
+    font-weight:100;
+    color:#FFF;
+}
+
+p.center 
+{
+    text-align: center;
+}
+
+form {
+    border-style:none;
+    border-radius:30px;
+    
+    width:80%;
+    height:60%;
+    opacity:1;
+    margin:0 auto;
+    margin-top:30px;
+}
+
+#form_cadastro
+{
+    text-decoration:none;
+    list-style:none;
+}
+
+
+#d_login {
+    width:400px;
+    height:270px;
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    background-image:url(../imagens/1pix.png);
+    background-repeat:repeat;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+#d_login_falha {
+    width:400px;
+    height:300px;
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    background-image:url(../imagens/1pix.png);
+    background-repeat:repeat;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+#d_login_falha p {
+    color:#ff0;
+}
+
+
+
+#d_cadastro{
+      width:400px;
+    height:560px;
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    background-image:url(../imagens/1pix.png);
+    background-repeat:repeat;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin: auto;  
+}
+
+ol {
+    margin:0;
+    padding:0;
+    list-style:none; 
+}
+
+form {
+
+}
+
+fieldset ol li {
+    
+}
+
+form ol li a
+{
+    text-align:center;
+}
+
+form ol li input.botao, a.botao {
+    box-shadow:none;
+    background-color:transparent;
+	border:1px #ab5d19;
+    border-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+	color:#bb9955;
+	font-family:arial;
+	font-size:14pt;
+	padding:4px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #663d28;
+    margin-top:4%;
+    margin-bottom:0;
+    width:102%;
+}
+
+form ol li a.botao
+{
+    width:100%;
+    color:#875;
+}
+
+form ol li input{
+    -webkit-box-shadow:0px 14px 20px 5px #221100;
+    -moz-box-shadow:0px 14px 20px 5px #221100;
+    width:98%;
+    height:100%;
+    padding-top:4px;
+    padding-left:10px;
+    margin-top:4px;
+    margin-bottom:10px;
+    background-color:#543;
+    border:none;
+    opacity:1;
+    color:#FFF;
+    font-size:12pt;
+}
+
+.botao:hover {
+    color:#FFF;
+	background-color:#bd692a;
+}
+.botao:active {
+	position:relative;
+	top:1px;
+}
+

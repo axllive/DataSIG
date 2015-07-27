@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/datasig/public/css/estilo_2.css">
+    <link rel="stylesheet" type="text/css" href="/datasig/public/css/estilo_body.css">
+    <title>DataSIG</title>
+  </head>
+    <body>
+      <div id="limite">
+      <div id="red_bar">
+                <nav id="nav_principal">
+                    <div id="nav_p_logo">
+                        DataSIG
+                    </div>
+                    <div id="nav_p_itens">
+                        <a href="<?=$this->url(array('controller'=>'autenticacao','action'=>'logout'),null,true)?>">SAIR</a>
+                         <form>
+                             <input placeholder="buscar" name="busca"/>
+                             <input type="submit" class="buscas" value="Ir">
+                         </form>
+                       <!-- <ul>
+                            <li><a href="#">O</a></li>
+                            <li><a>X</a></li>
+                            <li><a>@</a></li>
+                        </ul>-->
+                    </div>
+                </nav>
+      </div>
+      </div>
+         <div id="geral">
+             <?php echo $this->layout()->content; ?>
+        </div>
+    </body>
+    </html>
+
